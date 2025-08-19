@@ -46,7 +46,7 @@ response = requests.post('https://modal.com/api/playground/vudeptrai7904/run', c
 #response = requests.post('https://modal.com/api/playground/vudeptrai7904/run', cookies=cookies, headers=headers, data=data)
 
 url = 'https://modal.com/api/playground/vudeptrai7904/run'
-delay = 30  
+delay = 20  
 
 def main():
     while True:
@@ -71,6 +71,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
