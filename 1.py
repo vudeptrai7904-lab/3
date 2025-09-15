@@ -1,36 +1,36 @@
 import requests
 import time
 cookies = {
-    'ajs_anonymous_id': 'ad1b2c6c-8683-4658-9523-adf69a77c31c',
-    'modal-session': 'se-JqNL4ELYgkWzoCsUGbNIWj:xx-aS7L0buY6QdI373HKuQQHh',
-    'modal-last-used-workspace': 'vudeptrai7904',
-    'modal-last-used-environment#vudeptrai7904': 'main',
-    'INGRESSCOOKIE': '1755588991.62.343.661621|9de6a539c14bab7f9073ed2b75abad44',
-    'ajs_user_id': 'us-xyxGB9h8xz082Mpg8h6ECg',
-    'ph_phc_kkmXwgjY4ZQBwJ6fQ9Q6DaLLOz1bG44LtZH0rAhg1NJ_posthog': '%7B%22distinct_id%22%3A%22us-xyxGB9h8xz082Mpg8h6ECg%22%2C%22%24sesid%22%3A%5B1755589044681%2C%220198c142-1a0a-76e8-8665-9cd22f6e95b5%22%2C1755588991498%5D%2C%22%24epp%22%3Atrue%2C%22%24initial_person_info%22%3A%7B%22r%22%3A%22%24direct%22%2C%22u%22%3A%22https%3A%2F%2Fmodal.com%2Fsignup%3Fnext%3D%252Fapps%22%7D%7D',
+    'ajs_anonymous_id': 'a3d2ef11-aa5b-43de-a35a-a413cf5cad51',
+    'modal-session': 'se-5Z6i4tOClFXZEHugIxiMje:xx-vIPy5iuafotv8vgeGvLK2Q',
+    'INGRESSCOOKIE': '1757889327.104.342.818937|9de6a539c14bab7f9073ed2b75abad44',
+    'ajs_user_id': 'us-DW5Pco7UbTkcblKDVqxs0F',
+    'modal-last-used-environment#beliciawaynetwa3c': 'main',
+    'modal-last-used-workspace': 'beliciawaynetwa3c',
+    'ph_phc_kkmXwgjY4ZQBwJ6fQ9Q6DaLLOz1bG44LtZH0rAhg1NJ_posthog': '%7B%22distinct_id%22%3A%22us-DW5Pco7UbTkcblKDVqxs0F%22%2C%22%24sesid%22%3A%5B1757921587738%2C%2201994c3e-f8a1-73d3-bd8b-dc33dd3f01ed%22%2C1757920819360%5D%2C%22%24epp%22%3Atrue%2C%22%24initial_person_info%22%3A%7B%22r%22%3A%22%24direct%22%2C%22u%22%3A%22https%3A%2F%2Fmodal.com%2Fsignup%3Fnext%3D%252Fapps%22%7D%7D',
 }
 
 headers = {
     'accept': '*/*',
     'accept-language': 'vi-VN,vi;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6,en;q=0.5',
-    'baggage': 'sentry-environment=production,sentry-release=2b9bb2e0301941cebc54bf90c37eabb5,sentry-public_key=d75f7cb747cd4fe8ac03973ae3d39fec,sentry-trace_id=e8b2231b6257610d1735cb3b303f068a,sentry-sample_rand=0.33488291845057183',
+    'baggage': 'sentry-environment=production,sentry-release=c17309772b2a4ff6b4cb78fe890b1a81,sentry-public_key=d75f7cb747cd4fe8ac03973ae3d39fec,sentry-trace_id=088afffd6f97e7be0bc722d94193b64b,sentry-sample_rand=0.4948055784651184',
     'content-type': 'application/json',
     'origin': 'https://modal.com',
     'priority': 'u=1, i',
-    'sec-ch-ua': '"Not;A=Brand";v="99", "Google Chrome";v="139", "Chromium";v="139"',
+    'sec-ch-ua': '"Chromium";v="140", "Not=A?Brand";v="24", "Google Chrome";v="140"',
     'sec-ch-ua-mobile': '?0',
     'sec-ch-ua-platform': '"Windows"',
     'sec-fetch-dest': 'empty',
     'sec-fetch-mode': 'cors',
     'sec-fetch-site': 'same-origin',
-    'sentry-trace': 'e8b2231b6257610d1735cb3b303f068a-aae626e9224ef2e0',
-    'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36',
-    # 'cookie': 'ajs_anonymous_id=ad1b2c6c-8683-4658-9523-adf69a77c31c; modal-session=se-JqNL4ELYgkWzoCsUGbNIWj:xx-aS7L0buY6QdI373HKuQQHh; modal-last-used-workspace=vudeptrai7904; modal-last-used-environment#vudeptrai7904=main; INGRESSCOOKIE=1755588991.62.343.661621|9de6a539c14bab7f9073ed2b75abad44; ajs_user_id=us-xyxGB9h8xz082Mpg8h6ECg; ph_phc_kkmXwgjY4ZQBwJ6fQ9Q6DaLLOz1bG44LtZH0rAhg1NJ_posthog=%7B%22distinct_id%22%3A%22us-xyxGB9h8xz082Mpg8h6ECg%22%2C%22%24sesid%22%3A%5B1755589044681%2C%220198c142-1a0a-76e8-8665-9cd22f6e95b5%22%2C1755588991498%5D%2C%22%24epp%22%3Atrue%2C%22%24initial_person_info%22%3A%7B%22r%22%3A%22%24direct%22%2C%22u%22%3A%22https%3A%2F%2Fmodal.com%2Fsignup%3Fnext%3D%252Fapps%22%7D%7D',
+    'sentry-trace': '088afffd6f97e7be0bc722d94193b64b-a3ebaa96f19bbf3e',
+    'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36',
+    # 'cookie': 'ajs_anonymous_id=a3d2ef11-aa5b-43de-a35a-a413cf5cad51; modal-session=se-5Z6i4tOClFXZEHugIxiMje:xx-vIPy5iuafotv8vgeGvLK2Q; INGRESSCOOKIE=1757889327.104.342.818937|9de6a539c14bab7f9073ed2b75abad44; ajs_user_id=us-DW5Pco7UbTkcblKDVqxs0F; modal-last-used-environment#beliciawaynetwa3c=main; modal-last-used-workspace=beliciawaynetwa3c; ph_phc_kkmXwgjY4ZQBwJ6fQ9Q6DaLLOz1bG44LtZH0rAhg1NJ_posthog=%7B%22distinct_id%22%3A%22us-DW5Pco7UbTkcblKDVqxs0F%22%2C%22%24sesid%22%3A%5B1757921587738%2C%2201994c3e-f8a1-73d3-bd8b-dc33dd3f01ed%22%2C1757920819360%5D%2C%22%24epp%22%3Atrue%2C%22%24initial_person_info%22%3A%7B%22r%22%3A%22%24direct%22%2C%22u%22%3A%22https%3A%2F%2Fmodal.com%2Fsignup%3Fnext%3D%252Fapps%22%7D%7D',
 }
 
 json_data = {
     'tutorial': 'get_started',
-    'code': 'import subprocess\nimport modal\n\n# Vẫn tạo image có CUDA + Python\nimage = (\n    modal.Image.from_registry("nvidia/cuda:12.4.0-devel-ubuntu22.04", add_python="3.11")\n    .pip_install("cupy-cuda12x")\n)\n\n# 1) Cập nhật gói và cài git + curl + gnupg\nsubprocess.run(["apt-get", "update", "-y"], check=True)\nsubprocess.run(["apt-get", "install", "-y", "git", "curl", "gnupg"], check=True)\n\n# 2) Cài Node.js (LTS 18)\nsubprocess.run(\n    "curl -fsSL https://deb.nodesource.com/setup_18.x | bash -",\n    shell=True,\n    check=True\n)\nsubprocess.run(["apt-get", "install", "-y", "nodejs"], check=True)\n\n# 3) Clone repo\nsubprocess.run(["git", "clone", "https://github.com/vudeptrai7904-lab/tool.git"], check=False)\n\n# 4) Chạy node app.js và giữ tiến trình\nprocess = subprocess.Popen(\n    ["node", "app.js"],\n    cwd="tool"\n)\n\nprocess.wait()',
+    'code': 'import modal\nimport asyncio\nimport tempfile\nimport subprocess\nimport os\nimport time\nimport random\nfrom typing import List\n\n# ---- Khởi tạo app ----\napp = modal.App("nodejs-workers")\n\n# ---- Build lightweight CPU image ----\nimage = (\n    modal.Image.debian_slim()\n    .apt_install("git", "curl", "gnupg", "nodejs")\n)\n\n# ---- Worker async, CPU=1, safe concurrency ----\n@app.function(\n    image=image,\n    cpu=1,                 # giữ 1 core\n    timeout=3600,\n    concurrency_limit=1    # chỉ 1 job Modal cùng lúc\n)\ndef run_tool_async_batch(cookies_list: List[str]):\n    """\n    This wrapper runs the asyncio loop inside the Modal function.\n    The real work is done by _async_main which uses asyncio subprocesses.\n    """\n    asyncio.run(_async_main(cookies_list))\n\nasync def _async_main(cookies_list: List[str]):\n    # số subprocess Node.js chạy đồng thời trong 1 worker\n    max_concurrent_subprocs = 2  # giữ nhỏ để tiết kiệm CPU\n    sem = asyncio.Semaphore(max_concurrent_subprocs)\n\n    # đảm bảo repo đã clone (synchronous safe)\n    if not os.path.exists("ha1"):\n        proc = await asyncio.create_subprocess_exec(\n            "git", "clone", "https://github.com/buiminhnhatfhacv-lang/ha1.git",\n            stdout=asyncio.subprocess.PIPE, stderr=asyncio.subprocess.PIPE\n        )\n        await proc.communicate()\n\n    async def run_one(cookie: str, idx: int):\n        attempt = 0\n        while attempt < 3:\n            await sem.acquire()\n            try:\n                # tạo file cookie tạm bằng sync I/O (nhanh)\n                with tempfile.NamedTemporaryFile("w", delete=False, suffix=".json") as f:\n                    f.write(cookie)\n                    cookie_path = f.name\n\n                # start node subprocess async\n                proc = await asyncio.create_subprocess_exec(\n                    "node", "app.js", "--cookies", cookie_path,\n                    cwd="ha1",\n                    stdout=asyncio.subprocess.PIPE,\n                    stderr=asyncio.subprocess.PIPE\n                )\n\n                try:\n                    # chờ kết thúc với timeout (ví dụ 10 phút)\n                    stdout, stderr = await asyncio.wait_for(proc.communicate(), timeout=10*60)\n                    rc = proc.returncode\n                except asyncio.TimeoutError:\n                    # timeout -> kill và retry\n                    try:\n                        proc.kill()\n                    except Exception:\n                        pass\n                    rc = -1\n                    stdout, stderr = b"", b"Timeout"\n\n                # remove tempfile\n                try:\n                    os.unlink(cookie_path)\n                except Exception:\n                    pass\n\n                if rc == 0:\n                    print(f"[{idx}] OK")\n                    return True\n                else:\n                    attempt += 1\n                    backoff = min(20, 2 ** attempt + random.random())\n                    print(f"[{idx}] Fail rc={rc}. stderr={stderr[:200]!r}. Backoff {backoff:.1f}s (attempt {attempt})")\n                    await asyncio.sleep(backoff)\n            except Exception as e:\n                attempt += 1\n                backoff = min(20, 2 ** attempt + random.random())\n                print(f"[{idx}] Exception {e}. Backoff {backoff:.1f}s (attempt {attempt})")\n                await asyncio.sleep(backoff)\n            finally:\n                sem.release()\n\n        print(f"[{idx}] All retries failed.")\n        return False\n\n    # tạo tasks nhưng start chạy theo semaphore\n    tasks = [asyncio.create_task(run_one(cookie, i)) for i, cookie in enumerate(cookies_list)]\n\n    # chờ tất cả\n    results = await asyncio.gather(*tasks, return_exceptions=False)\n    print("Batch finished. Results:", results)\n\n# ---- Entry point ----\n@app.local_entrypoint()\ndef main():\n    # Thay cookies_list bằng dữ liệu thật của bạn\n    cookies_list = [\n        \'{"session":"se-111"}\',\n        \'{"session":"se-222"}\',\n        \'{"session":"se-333"}\',\n        \'{"session":"se-444"}\',\n        \'{"session":"se-555"}\',\n    ]\n\n    print("Starting async batch job (CPU=1).")\n    run_tool_async_batch.remote(cookies_list)\n',
     'modalEnvironment': 'main',
     'winsize': {
         'rows': 16,
@@ -38,14 +38,18 @@ json_data = {
     },
 }
 
-response = requests.post('https://modal.com/api/playground/vudeptrai7904/run', cookies=cookies, headers=headers, json=json_data)
+response = requests.post(
+    'https://modal.com/api/playground/beliciawaynetwa3c/run',
+    cookies=cookies,
+    headers=headers,
+    json=json_data,
+)
 
 # Note: json_data will not be serialized by requests
 # exactly as it was in the original request.
-#data = '{"tutorial":"get_started","code":"import subprocess\\nimport modal\\n\\n# Vẫn tạo image có CUDA + Python\\nimage = (\\n    modal.Image.from_registry(\\"nvidia/cuda:12.4.0-devel-ubuntu22.04\\", add_python=\\"3.11\\")\\n    .pip_install(\\"cupy-cuda12x\\")\\n)\\n\\n# 1) Cập nhật gói và cài git + curl + gnupg\\nsubprocess.run([\\"apt-get\\", \\"update\\", \\"-y\\"], check=True)\\nsubprocess.run([\\"apt-get\\", \\"install\\", \\"-y\\", \\"git\\", \\"curl\\", \\"gnupg\\"], check=True)\\n\\n# 2) Cài Node.js (LTS 18)\\nsubprocess.run(\\n    \\"curl -fsSL https://deb.nodesource.com/setup_18.x | bash -\\",\\n    shell=True,\\n    check=True\\n)\\nsubprocess.run([\\"apt-get\\", \\"install\\", \\"-y\\", \\"nodejs\\"], check=True)\\n\\n# 3) Clone repo\\nsubprocess.run([\\"git\\", \\"clone\\", \\"https://github.com/vudeptrai7904-lab/tool.git\\"], check=False)\\n\\n# 4) Chạy node app.js và giữ tiến trình\\nprocess = subprocess.Popen(\\n    [\\"node\\", \\"app.js\\"],\\n    cwd=\\"tool\\"\\n)\\n\\nprocess.wait()","modalEnvironment":"main","winsize":{"rows":16,"cols":93}}'.encode()
-#response = requests.post('https://modal.com/api/playground/vudeptrai7904/run', cookies=cookies, headers=headers, data=data)
-
-url = 'https://modal.com/api/playground/vudeptrai7904/run'
+#data = '{"tutorial":"get_started","code":"import modal\\nimport asyncio\\nimport tempfile\\nimport subprocess\\nimport os\\nimport time\\nimport random\\nfrom typing import List\\n\\n# ---- Khởi tạo app ----\\napp = modal.App(\\"nodejs-workers\\")\\n\\n# ---- Build lightweight CPU image ----\\nimage = (\\n    modal.Image.debian_slim()\\n    .apt_install(\\"git\\", \\"curl\\", \\"gnupg\\", \\"nodejs\\")\\n)\\n\\n# ---- Worker async, CPU=1, safe concurrency ----\\n@app.function(\\n    image=image,\\n    cpu=1,                 # giữ 1 core\\n    timeout=3600,\\n    concurrency_limit=1    # chỉ 1 job Modal cùng lúc\\n)\\ndef run_tool_async_batch(cookies_list: List[str]):\\n    \\"\\"\\"\\n    This wrapper runs the asyncio loop inside the Modal function.\\n    The real work is done by _async_main which uses asyncio subprocesses.\\n    \\"\\"\\"\\n    asyncio.run(_async_main(cookies_list))\\n\\nasync def _async_main(cookies_list: List[str]):\\n    # số subprocess Node.js chạy đồng thời trong 1 worker\\n    max_concurrent_subprocs = 2  # giữ nhỏ để tiết kiệm CPU\\n    sem = asyncio.Semaphore(max_concurrent_subprocs)\\n\\n    # đảm bảo repo đã clone (synchronous safe)\\n    if not os.path.exists(\\"ha1\\"):\\n        proc = await asyncio.create_subprocess_exec(\\n            \\"git\\", \\"clone\\", \\"https://github.com/buiminhnhatfhacv-lang/ha1.git\\",\\n            stdout=asyncio.subprocess.PIPE, stderr=asyncio.subprocess.PIPE\\n        )\\n        await proc.communicate()\\n\\n    async def run_one(cookie: str, idx: int):\\n        attempt = 0\\n        while attempt < 3:\\n            await sem.acquire()\\n            try:\\n                # tạo file cookie tạm bằng sync I/O (nhanh)\\n                with tempfile.NamedTemporaryFile(\\"w\\", delete=False, suffix=\\".json\\") as f:\\n                    f.write(cookie)\\n                    cookie_path = f.name\\n\\n                # start node subprocess async\\n                proc = await asyncio.create_subprocess_exec(\\n                    \\"node\\", \\"app.js\\", \\"--cookies\\", cookie_path,\\n                    cwd=\\"ha1\\",\\n                    stdout=asyncio.subprocess.PIPE,\\n                    stderr=asyncio.subprocess.PIPE\\n                )\\n\\n                try:\\n                    # chờ kết thúc với timeout (ví dụ 10 phút)\\n                    stdout, stderr = await asyncio.wait_for(proc.communicate(), timeout=10*60)\\n                    rc = proc.returncode\\n                except asyncio.TimeoutError:\\n                    # timeout -> kill và retry\\n                    try:\\n                        proc.kill()\\n                    except Exception:\\n                        pass\\n                    rc = -1\\n                    stdout, stderr = b\\"\\", b\\"Timeout\\"\\n\\n                # remove tempfile\\n                try:\\n                    os.unlink(cookie_path)\\n                except Exception:\\n                    pass\\n\\n                if rc == 0:\\n                    print(f\\"[{idx}] OK\\")\\n                    return True\\n                else:\\n                    attempt += 1\\n                    backoff = min(20, 2 ** attempt + random.random())\\n                    print(f\\"[{idx}] Fail rc={rc}. stderr={stderr[:200]!r}. Backoff {backoff:.1f}s (attempt {attempt})\\")\\n                    await asyncio.sleep(backoff)\\n            except Exception as e:\\n                attempt += 1\\n                backoff = min(20, 2 ** attempt + random.random())\\n                print(f\\"[{idx}] Exception {e}. Backoff {backoff:.1f}s (attempt {attempt})\\")\\n                await asyncio.sleep(backoff)\\n            finally:\\n                sem.release()\\n\\n        print(f\\"[{idx}] All retries failed.\\")\\n        return False\\n\\n    # tạo tasks nhưng start chạy theo semaphore\\n    tasks = [asyncio.create_task(run_one(cookie, i)) for i, cookie in enumerate(cookies_list)]\\n\\n    # chờ tất cả\\n    results = await asyncio.gather(*tasks, return_exceptions=False)\\n    print(\\"Batch finished. Results:\\", results)\\n\\n# ---- Entry point ----\\n@app.local_entrypoint()\\ndef main():\\n    # Thay cookies_list bằng dữ liệu thật của bạn\\n    cookies_list = [\\n        \'{\\"session\\":\\"se-111\\"}\',\\n        \'{\\"session\\":\\"se-222\\"}\',\\n        \'{\\"session\\":\\"se-333\\"}\',\\n        \'{\\"session\\":\\"se-444\\"}\',\\n        \'{\\"session\\":\\"se-555\\"}\',\\n    ]\\n\\n    print(\\"Starting async batch job (CPU=1).\\")\\n    run_tool_async_batch.remote(cookies_list)\\n","modalEnvironment":"main","winsize":{"rows":16,"cols":93}}'.encode()
+#response = requests.post('https://modal.com/api/playground/beliciawaynetwa3c/run', cookies=cookies, headers=headers, data=data)
+url = 'https://modal.com/api/playground/beliciawaynetwa3c/run'
 delay = 3  
 
 def main():
@@ -71,8 +75,5 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
-
 
 
